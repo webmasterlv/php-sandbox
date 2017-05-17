@@ -21,5 +21,6 @@ You must have npm installed to build the project.
 ### Contribution
 Since there are lots of features that can possibly be added, drop an issue, and there is a chance it will be added.
 
-**Dislcaimer**== - obviously, this tool uses eval() and does not filter code that is being passed to execution. You are fully responsible for properly securing access to this tool. The author is not responsible for any damages or consequences of using this tool. Use at your own risk.==
+### Dislcaimer
+Obviously, this tool uses eval() and does not filter code that is being passed to execution. You are fully responsible for properly securing access to this tool. The author is not responsible for any damages or consequences of using this tool. Use at your own risk.==
 

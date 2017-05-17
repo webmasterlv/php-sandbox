@@ -2,7 +2,7 @@
 
 Online console to quickly test your PHP code.
 
-[[https://github.com/webmasterlv/php-sandbox/tree/master/img/php-sandbox-interface.jpg|alt=interface]]
+![interface](https://raw.githubusercontent.com/webmasterlv/php-sandbox/master/img/php-sandbox-interface.jpg)
 
 ### Features
 

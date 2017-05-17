@@ -1,0 +1,15 @@
+$host	= "localhost";
+$dbname = "";
+$user 	= "dev";
+$pass 	= "dev";
+$db 	= false;
+
+try {
+	$dso = "mysql:dbname=$dbname;host=$host;charset=utf8mb4";
+	$db = new PDO($dso, $user, $pass, [
+		PDO::ATTR_EMULATE_PREPARES => false,
+		PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+	]);
+} catch (Exception $e) {
+	echo "Failed to connect to database: ".$e->getMessage();
+}

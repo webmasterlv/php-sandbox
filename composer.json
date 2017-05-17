@@ -1,0 +1,19 @@
+{
+	"name" : "webmasterlv/php-sandbox",
+	"description" : "Online console to quickly test your PHP code.",
+	"keywords" : ["php", "sandbox", "console"],
+	"homepage" : "https://github.com/webmasterlv/php-sandbox",
+	"license" : "MIT",
+	"type" : "library",
+	"require" : {
+		"php" : "^5.0|^7.0"
+	},
+	"scripts" : {
+		"post-install-cmd": [
+			"npm install --production"
+		],
+		"post-update-cmd": [
+			"npm update --production"
+		]
+	}	
+}

@@ -1,0 +1,16 @@
+{
+	"name" : "php-sandbox",
+	"homepage" : "https://github.com/webmasterlv/php-sandbox",
+	"license" : "MIT",
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/webmasterlv/php-sandbox"
+	},
+	"version" : "1.0.0",
+	"description" : "Online console to quickly test your PHP code.",
+	"dependencies" : {
+		"codemirror" : "^5.0",
+		"jquery" : "^3.2",
+		"jquery.hotkeys" : "^0.1"
+	}
+}

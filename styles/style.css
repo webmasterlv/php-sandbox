@@ -98,7 +98,7 @@ html, body {
 }
 
 .code__source {
-	width: 40%;
+	flex:0 0 40%;
 }
 
 .code__source .CodeMirror {
@@ -110,13 +110,25 @@ html, body {
 }
 
 .code__result {
-	width: 60%;
+	flex:1;
 	position:relative;
 }
 
 .code__result > div {
 	padding:20px;
 	position:relative;
+}
+
+.code.layout-horizontal {
+	flex-direction: column;
+}
+
+.code.layout-horizontal .code__result {
+	order:1;
+}
+
+.code.layout-horizontal .code__source {
+	order:2;
 }
 
 .code__result iframe {

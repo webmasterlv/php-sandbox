@@ -85,6 +85,15 @@ foreach ($files as $file) {
 						</label>
 					</li>
 					<li>
+						<label class="form-label">Layout:</label>
+						<div class="select-style">
+							<select id="layout-selector" onchange="phpSandbox.setLayout(this.value)">
+								<option value="vertical">Vertical</option>
+								<option value="horizontal">Horizontal</option>
+							</select>
+						</div>
+					</li>
+					<li>
 						<label class="form-label">Template:</label>
 						<div class="select-style">
 							<select id="template-selector" onchange="phpSandbox.setTemplate(this.value)">
@@ -118,7 +127,7 @@ foreach ($files as $file) {
 			</div>
 		</header>
 		<main>
-			<div class="code">
+			<div id="ide" class="code">
 				<div class="code__source" id="code">
 					
 				</div>

@@ -31,6 +31,17 @@ var phpSandbox = {
 	hideLoading : function() {
 		$('#loading').addClass('hidden');
 	},
+	setLayout : function(layout) {
+		this.layout = layout;
+
+		var code = document.getElementById('ide');
+		code.classList.remove("layout-vertical");
+		code.classList.remove("layout-horizontal");
+		code.classList.add("layout-" + layout);
+		
+		localStorage.setItem("layout", layout);
+		$('#layout-selector').val(layout);
+	},
 	setTemplate : function(index) {
 		if (!index) {
 			return;
@@ -62,6 +73,8 @@ var phpSandbox = {
 			value: this.value
 		});
 		
+		this.setLayout(localStorage.getItem("layout") || 'vertical');
+
 		this.editor.on('change', $.proxy(this.checkAuto, this));
 		
 		jQuery.hotkeys.options.filterContentEditable = false;

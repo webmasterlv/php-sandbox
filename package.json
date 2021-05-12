@@ -9,7 +9,7 @@
 	"version": "1.0.0",
 	"description": "Online console to quickly test your PHP code.",
 	"dependencies": {
-		"codemirror": "^5.0",
+		"codemirror": "^5.58",
 		"jquery": "^3.2",
 		"jquery.hotkeys": "^0.1"
 	}
